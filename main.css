@@ -30,15 +30,6 @@ a {
     line-height: 1.6em;
 }
 
-.avatar {
-    border-radius: 50%;
-    width: 120px; /* уменьшил до 120px для надёжности */
-    height: 120px; /* явно задаём высоту, равную ширине */
-    object-fit: cover; /* заполняет круг, обрезая лишнее */
-    mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
-    -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
-}
-
 .icons {
     list-style-type: none;
     font-size: xx-large;
