@@ -31,6 +31,10 @@ a:hover {
     height: auto; /* Высота подстраивается под ширину */
     aspect-ratio: 1 / 1; /* Принудительное сохранение квадрата */
     object-fit: cover;
+
+
+    mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
+    -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
 }
 
 .icons {
