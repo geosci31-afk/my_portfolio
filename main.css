@@ -1,7 +1,17 @@
-html {
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: larger;
     font-weight: 300;
+    padding: 20px;
 }
 
 a {
@@ -9,30 +19,22 @@ a {
     color: #1565c0;
 }
 
-a:hover {
-    color: #217ee7;
-}
+    a:hover {
+        color: #217ee7;
+    }
 
 #content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    text-align: center;
     max-width: 520px;
     padding: 32px;
+    text-align: center;
     line-height: 1.6em;
 }
 
 .avatar {
     border-radius: 50%;
-    width: 150px;
-    height: auto; /* Высота подстраивается под ширину */
-    aspect-ratio: 1 / 1; /* Принудительное сохранение квадрата */
-    object-fit: cover;
-
-
+    width: 120px; /* уменьшил до 120px для надёжности */
+    height: 120px; /* явно задаём высоту, равную ширине */
+    object-fit: cover; /* заполняет круг, обрезая лишнее */
     mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
     -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 90%);
 }
@@ -48,15 +50,15 @@ a:hover {
     margin: 1em auto;
 }
 
-.icons li {
-    display: inline;
-    width: 42px;
-}
+    .icons li {
+        display: inline;
+        width: 42px;
+    }
 
-.icons a {
-    color: black;
-}
+    .icons a {
+        color: black;
+    }
 
-.icons a:hover {
-    color: #1565c0;
-}
+        .icons a:hover {
+            color: #1565c0;
+        }
