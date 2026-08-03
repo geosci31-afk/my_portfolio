@@ -28,6 +28,9 @@ a:hover {
 .avatar {
     border-radius: 50%;
     width: 150px;
+    height: auto; /* Высота подстраивается под ширину */
+    aspect-ratio: 1 / 1; /* Принудительное сохранение квадрата */
+    object-fit: cover;
 }
 
 .icons {
